@@ -8,14 +8,22 @@ Modules:
     queue       -- Redis-based task queue operations
     match       -- AI Match Brain scoring and candidate allocation
     exception_resolution -- Exception case handling and auto-resolution
+    otp_resolution -- OTP auto-fetch and management
+    captcha_router -- Captcha detection and routing
+    login_recovery -- Login failure recovery
+    form_solver -- Unknown form handling
 """
 
 from app.services import (
     analytics,
     application,
+    captcha_router,
     exception_resolution,
+    form_solver,
     job_search,
+    login_recovery,
     match,
+    otp_resolution,
     queue,
     resume,
 )
@@ -23,9 +31,13 @@ from app.services import (
 __all__ = [
     "analytics",
     "application",
+    "captcha_router",
     "exception_resolution",
+    "form_solver",
     "job_search",
+    "login_recovery",
     "match",
+    "otp_resolution",
     "queue",
     "resume",
 ]
