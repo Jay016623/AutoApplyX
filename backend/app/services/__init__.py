@@ -12,12 +12,16 @@ Modules:
     captcha_router -- Captcha detection and routing
     login_recovery -- Login failure recovery
     form_solver -- Unknown form handling
+    resume_tailoring -- JD-based resume tailoring
+    cover_letter -- Cover letter generation
+    smart_answers -- Pre-approved Q&A bank
 """
 
 from app.services import (
     analytics,
     application,
     captcha_router,
+    cover_letter,
     exception_resolution,
     form_solver,
     job_search,
@@ -26,12 +30,15 @@ from app.services import (
     otp_resolution,
     queue,
     resume,
+    resume_tailoring,
+    smart_answers,
 )
 
 __all__ = [
     "analytics",
     "application",
     "captcha_router",
+    "cover_letter",
     "exception_resolution",
     "form_solver",
     "job_search",
@@ -40,4 +47,6 @@ __all__ = [
     "otp_resolution",
     "queue",
     "resume",
+    "resume_tailoring",
+    "smart_answers",
 ]
