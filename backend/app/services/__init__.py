@@ -15,6 +15,9 @@ Modules:
     resume_tailoring -- JD-based resume tailoring
     cover_letter -- Cover letter generation
     smart_answers -- Pre-approved Q&A bank
+    follow_up -- Automated follow-up sequences
+    email_monitor -- Inbox monitoring and classification
+    kpi_dashboard -- Analytics and reporting
 """
 
 from app.services import (
@@ -22,9 +25,12 @@ from app.services import (
     application,
     captcha_router,
     cover_letter,
+    email_monitor,
     exception_resolution,
+    follow_up,
     form_solver,
     job_search,
+    kpi_dashboard,
     login_recovery,
     match,
     otp_resolution,
@@ -39,9 +45,12 @@ __all__ = [
     "application",
     "captcha_router",
     "cover_letter",
+    "email_monitor",
     "exception_resolution",
+    "follow_up",
     "form_solver",
     "job_search",
+    "kpi_dashboard",
     "login_recovery",
     "match",
     "otp_resolution",
