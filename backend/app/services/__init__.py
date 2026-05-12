@@ -18,11 +18,13 @@ Modules:
     follow_up -- Automated follow-up sequences
     email_monitor -- Inbox monitoring and classification
     kpi_dashboard -- Analytics and reporting
+    auth -- Authentication JWT and password handling
 """
 
 from app.services import (
     analytics,
     application,
+    auth,
     captcha_router,
     cover_letter,
     email_monitor,
@@ -43,6 +45,7 @@ from app.services import (
 __all__ = [
     "analytics",
     "application",
+    "auth",
     "captcha_router",
     "cover_letter",
     "email_monitor",

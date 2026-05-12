@@ -13,6 +13,7 @@ from app.models.operator_task import OperatorTask
 from app.models.portal_account import PortalAccount
 from app.models.resolution_pattern import CaptchaEvent, OTPEvent, ResolutionPattern
 from app.models.resume import Resume
+from app.models.user import User, UserRole
 from app.models.user_settings import UserSettings
 from app.models.worker_job import WorkerJob
 
@@ -34,6 +35,8 @@ __all__ = [
     "ResolutionPattern",
     "Resume",
     "TimestampMixin",
+    "User",
+    "UserRole",
     "UUIDPrimaryKeyMixin",
     "UserSettings",
     "WorkerJob",
