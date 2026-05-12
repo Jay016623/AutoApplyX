@@ -7,11 +7,13 @@ Modules:
     analytics   -- Dashboard statistics and reporting
     queue       -- Redis-based task queue operations
     match       -- AI Match Brain scoring and candidate allocation
+    exception_resolution -- Exception case handling and auto-resolution
 """
 
 from app.services import (
     analytics,
     application,
+    exception_resolution,
     job_search,
     match,
     queue,
@@ -21,6 +23,7 @@ from app.services import (
 __all__ = [
     "analytics",
     "application",
+    "exception_resolution",
     "job_search",
     "match",
     "queue",
